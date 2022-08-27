@@ -8,7 +8,7 @@
 :root {
   --main-color: #2196f3;
   --main-color-alt: #1787e0;
-  --main-transition: 0.3s;
+  --main-transition: 0.3s;  
   --main-padding-top: 100px;
   --main-padding-bottom: 100px;
   --section-background: #ececec;
@@ -24,6 +24,7 @@ body {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 ul {
@@ -132,6 +133,7 @@ ul {
   font-size: 20px;
   display: none;
 }
+
 .scroll:hover {
   background: linear-gradient(to left, #1368cc 50%, #0075ff 50%) no-repeat
     scroll right bottom/210% 100% #0075ff;
@@ -238,12 +240,12 @@ header .mega-menu {
   }
 }
 
- /* .onther-links:hover .mega-menu {
-  opacity: 1;
+ .onther-links .mega-menu-active {
+    opacity: 1;
     z-index: 100;
     top: 100%;
     display: flex;
-}  */
+} 
 
 header .mega-menu .image img {
   max-width: 100%;
@@ -1558,6 +1560,9 @@ header .mega-menu .links li:hover::before {
   padding: 25px 0;
   margin: 50px 0 0;
   border-top: 1px solid #444;
+}
+.footer .copyright a {
+  color: var(--main-color);
 }
 .footer .box .description {
   color: #b9b9b9;

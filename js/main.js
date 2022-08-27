@@ -1,25 +1,6 @@
-// let btn = document.getElementById("btnscroll");
-// let ontherLinks = document.getElementById("onther-links");
-
-
-// window.onscroll = function () {
-//   if (scrollY >= 675) {
-//     btn.style.display = "block";
-//   } else {
-//     btn.style.display = "none";
-//   }
-// };
-// btn.onclick = function () {
-//   scroll({
-//     top: 0,
-//     let: 0,
-//     behavior: "smooth",
-//   });
-// };
-
 // header
 let topHeader = document.getElementById("header");
-onscroll = function  () {
+onscroll = function header() {
   if (scrollY >= 130) {
     topHeader.style.position = "fixed";
     topHeader.style.backgroundColor = "#ffffff";
@@ -32,12 +13,11 @@ onscroll = function  () {
 };
 
 // Mega Menu
-// let ontherlink = document.getElementById("onther-links");
-// let megaMeny = document.getElementById("mega-menu");
-// ontherLinks.onclick = function () {
-//   megaMeny.style.opacity = "1";
-//   megaMeny.style.top = "100%";
-// };
+let ontherlink = document.getElementById("onther-links");
+let megaMenu = document.getElementById("mega-menu");
+ontherLinks.onclick = function megaMenuT() {
+  megaMenu.classList.toggle('mega-menu-active')
+};
 
 
 
